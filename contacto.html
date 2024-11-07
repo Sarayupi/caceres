@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="form.css">
+    <title>Cáceres-Bienvenidos</title>
+    <h1>Bienvenidos a Cáceres</h1>
+</head>
+<body>
+    <header class="header">
+        <div class="menu container">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="historia.html">Historia</a></li>
+                    <li><a href="tradiciones.html">Tradiciones</a></li>
+                    <li><a href="datosestadisticos.html">Datos Estadísticos</a></li>
+                    <li><a href="informacionturistica.html">Información Turística</a></li>
+                    <li><a href="contenidomultimedia.html">Contenido Multimedia</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    <form action="#" method="post">
+        <fieldset>
+          <legend>Contacto</legend>
+          <div class="form-element">
+            <label for="nombre" class="error">Nombre:</label><input id="nombre" type="text" name="nombre" value="" class="error" />
+          </div>
+          <div>
+            <label for="email">Email: </label> <input id="email" type="text" name="email" value="" />
+          </div>
+          <div class="form-element">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+          </div>
+          <div class="form-element">
+            <label for="noticias">¿Deseas recibir noticias?</label>
+            <input type="checkbox" id="noticias" name="noticias">
+          </div>
+          <div class="form-element">
+            <input type="checkbox" id="noticias" name="noticias">
+            <label for="noticias">¿Deseas recibir noticias?</label>
+          </div>
+          <div class="controlset form-element">
+            <span class="label">¿Cómo nos conociste?</span>
+            <input type="radio" id="internet" name="origen" value="internet"><label for="internet">Internet</label>
+            <input type="radio" id="amigos" name="origen" value="amigos"><label for="amigos">Amigos</label>
+          </div>
+          <div class="form-element">
+            <label for="interes">Interés en la ciudad:</label>
+            <select id="interes" name="interes">
+                <option value="turismo">Turismo</option>
+                <option value="historia">Historia</option>
+                <option value="negocios">Negocios</option>
+            </select>
+          </div>
+          <div class="buttonrow form-element">
+            <input type="submit" value="Enviar" class="button" />
+            <input type="reset" value="Restablecer" class="button" />
+          </div>
+        </fieldset>
+    </form>
+</body>
+</html>
